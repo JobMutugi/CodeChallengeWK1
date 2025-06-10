@@ -12,10 +12,14 @@ function estimateTransactionFee(amountToSend) {
     // Calculate total amount debited
     let totalDebited = amountToSend + basicFee;
 
-    // Print results
-    console.log(`Amount to send: ${amountToSend} KES`);
-    console.log(`Transaction fee: ${basicFee} KES`);
-    console.log(`Total debited: ${totalDebited} KES`);
+    // Build output for the web page
+    let output = "";
+    output += `<p>Amount to send: ${amountToSend} KES</p>`;
+    output += `<p>Transaction fee: ${basicFee} KES</p>`;
+    output += `<p>Total debited: ${totalDebited} KES</p>`;
+
+    // Display the output on the web page
+    document.body.innerHTML += output;
 }
 
 // Prompt user and convert input to number
