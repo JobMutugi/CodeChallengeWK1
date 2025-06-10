@@ -19,3 +19,6 @@ This repository contains programs created for the Week 1 coding challenge.
     ```
 3. Run the programs using your preferred language interpreter.
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
